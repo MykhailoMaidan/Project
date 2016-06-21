@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainBook</class>
+ <widget class="QDialog" name="MainBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>349</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+                          background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(212, 146, 70, 255), stop:1 rgba(255, 255, 255, 255));
+                          border-style: inset;
+                          border-style: outset;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QPushButton:pressed{
+                          background-color: rgb(224, 200, 0);
+                          border-style: inset;
+                          color: red;
+                          border-style: outset;
+                          border-width: 3px;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QDialog
+{
+ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(50, 88, 99, 255), stop:1 rgba(255, 255, 255, 255))
+}
+QTableWidget {
+    background-color: qlineargradient(spread:repeat, x1:0, y1:0, x2:1, y2:1, stop:0.272727 rgba(203, 228, 225, 255))
+}
+QHeaderView, QHeaderView::section {
+    background-color: rgba(128, 128, 128, 128);
+}
+QLineEdit {
+     border: 2px solid gray;
+     border-radius: 10px;
+     padding: 0 8px;
+     background: rgb(85, 170, 127);
+ }
+QGroupBox::title {
+  subcontrol-position: top center; /* position at the top center */
+}
+QGroupBox{
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QLabel
+{
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QCheckBox {
+   spacing: 5px;                          
+	border-style: inset;
+	border-style: outset;
+     border-radius: 10px;
+}
+
+ QCheckBox::indicator {
+ width: 13px;
+ height: 13px;
+ }
+</string>
+  </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>171</width>
+     <height>231</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Menu Books</string>
+   </property>
+   <widget class="QPushButton" name="AuthorButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>142</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Author</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="GenresButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>142</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Genres</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CancleButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>170</y>
+      <width>142</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>Cancel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Search_pushButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>120</y>
+      <width>142</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QTableWidget" name="TableForCatalog">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>50</y>
+     <width>201</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Maximum" vsizetype="Maximum">
+     <horstretch>174</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="sizeIncrement">
+    <size>
+     <width>0</width>
+     <height>0</height>
+    </size>
+   </property>
+   <property name="midLineWidth">
+    <number>171</number>
+   </property>
+   <property name="horizontalScrollBarPolicy">
+    <enum>Qt::ScrollBarAlwaysOff</enum>
+   </property>
+   <property name="rowCount">
+    <number>0</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>201</number>
+   </attribute>
+  </widget>
+  <widget class="QTableWidget" name="Books_info">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>50</y>
+     <width>211</width>
+     <height>221</height>
+    </rect>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>105</number>
+   </attribute>
+  </widget>
+  <widget class="QLineEdit" name="SearchLine_edit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>171</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="Author_checkBox">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>10</y>
+     <width>70</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Author</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>287</x>
+     <y>11</y>
+     <width>331</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="username_label">
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QSpinBox" name="Counter_spinBox"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="Buy_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+                          background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(212, 146, 70, 255), stop:1 rgba(255, 255, 255, 255));
+                          border-style: inset;
+                          border-style: outset;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 2em;
+                          padding: 6px;
+}</string>
+      </property>
+      <property name="text">
+       <string>Buy</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

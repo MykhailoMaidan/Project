@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/picture">
+        <file>book.jpg</file>
+        <file>44525433.jpg</file>
+        <file>books.png</file>
+    </qresource>
+</RCC>

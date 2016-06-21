@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>651</width>
+    <height>361</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+                          background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(212, 146, 70, 255), stop:1 rgba(255, 255, 255, 255));
+                          border-style: inset;
+                          border-style: outset;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QPushButton:pressed{
+                          background-color: rgb(224, 200, 0);
+                          border-style: inset;
+                          color: red;
+                          border-style: outset;
+                          border-width: 3px;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QMainWindow
+{
+ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(50, 88, 99, 255), stop:1 rgba(255, 255, 255, 255))
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>40</y>
+      <width>161</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="title">
+     <string/>
+    </property>
+    <widget class="QPushButton" name="Log_in_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>37</y>
+       <width>142</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Log in</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Registratio_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>85</y>
+       <width>142</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Registration</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="Menu_books_button">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>142</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Menu books</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>40</y>
+      <width>421</width>
+      <height>211</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="image.qrc">:/picture/book.jpg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="user_name">
+    <property name="geometry">
+     <rect>
+      <x>340</x>
+      <y>10</y>
+      <width>171</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>10</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+                          background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(212, 146, 70, 255), stop:1 rgba(255, 255, 255, 255));
+                          border-style: inset;
+                          border-style: outset;
+                          border-radius: 5px;
+                          border-color: beige;
+                          font: bold 4p;
+                          min-width: 4em;
+                          padding: 3px;
+}</string>
+    </property>
+    <property name="text">
+     <string>Exit</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>651</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
+ <connections/>
+</ui>

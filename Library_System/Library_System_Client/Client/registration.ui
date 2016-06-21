@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Registration</class>
+ <widget class="QDialog" name="Registration">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>695</width>
+    <height>309</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton{
+                          background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(212, 146, 70, 255), stop:1 rgba(255, 255, 255, 255));
+                          border-style: inset;
+                          border-style: outset;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QPushButton:pressed{
+                          background-color: rgb(224, 200, 0);
+                          border-style: inset;
+                          color: red;
+                          border-style: outset;
+                          border-width: 3px;
+                          border-radius: 10px;
+                          border-color: beige;
+                          font: bold 14p;
+                          min-width: 10em;
+                          padding: 6px;
+}
+QDialog
+{
+ background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(50, 88, 99, 255), stop:1 rgba(255, 255, 255, 255));
+
+}
+ QLineEdit {
+     border: 2px solid gray;
+     border-radius: 10px;
+     padding: 0 8px;
+     background: rgb(85, 170, 127);
+ }
+QGroupBox::title {
+  subcontrol-position: top center; /* position at the top center */
+}
+QGroupBox{
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+QLabel
+{
+font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+}
+</string>
+  </property>
+  <widget class="QPushButton" name="Regis_button">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>60</y>
+     <width>151</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Registration</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="can_reg_button">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>150</y>
+     <width>151</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="Registration_2">
+   <property name="geometry">
+    <rect>
+     <x>9</x>
+     <y>9</y>
+     <width>491</width>
+     <height>281</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Registration</string>
+   </property>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>23</y>
+      <width>461</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <layout class="QHBoxLayout" name="Yourname_layout">
+       <item>
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Your name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="Yousurname_layout">
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Your surname</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_2"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="loginname_layout">
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>Login name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_3"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="email_layout">
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Email address</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_4"/>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="password_layout">
+       <item>
+        <widget class="QLabel" name="label_5">
+         <property name="text">
+          <string>Password</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="lineEdit_5"/>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
